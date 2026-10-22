@@ -71,7 +71,10 @@ export default function Footer() {
             <ul className="footer-contact-list">
               <li>
                 <span aria-hidden="true">📞</span>
-                <a href="tel:+919666566846">+91 96665 66846</a>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                  <a href="tel:+919666566846">+91 96665 66846</a>
+                  <a href="tel:+919666566881">+91 96665 66881</a>
+                </div>
               </li>
               <li>
                 <span aria-hidden="true" style={{ color: '#25D366' }}>

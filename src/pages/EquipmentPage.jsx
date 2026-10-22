@@ -3,26 +3,26 @@ import { Link } from 'react-router-dom';
 import './EquipmentPage.css';
 
 const allEquipment = [
-  { id: 1,  img: '/equip-1.jpg',  name: 'Hospital Bed',               category: 'Beds & Mattresses',   type: 'Rent / Sale', tag: 'Most Rented', desc: 'Adjustable hospital-grade bed with side rails. Ideal for home recovery and long-term patients.' },
-  { id: 2,  img: '/equip-2.jpg',  name: 'Wheelchair',                  category: 'Mobility Aids',        type: 'Rent / Sale', tag: '',           desc: 'Lightweight foldable wheelchair. Suitable for indoor and outdoor use for elderly and patients.' },
-  { id: 3,  img: '/equip-3.jpg',  name: 'Oxygen Concentrator',         category: 'Respiratory',          type: 'Rent / Sale', tag: 'Popular',    desc: 'Medical-grade oxygen concentrator for home oxygen therapy. Available in 5L and 10L models.' },
-  { id: 4,  img: '/equip-4.jpg',  name: 'Patient Attendant Table',     category: 'Beds & Mattresses',    type: 'Rent / Sale', tag: '',           desc: 'Height-adjustable bedside table for meals, laptop, or medical supplies while in bed.' },
-  { id: 5,  img: '/equip-5.jpg',  name: 'IV Stand / Drip Stand',       category: 'Clinical Aids',        type: 'Rent / Sale', tag: '',           desc: 'Stainless steel IV drip stand with adjustable height. Suitable for home IV therapy.' },
-  { id: 6,  img: '/equip-6.jpg',  name: 'Air Mattress / Bed Sore',     category: 'Beds & Mattresses',    type: 'Rent / Sale', tag: 'New',        desc: 'Anti-decubitus air mattress to prevent pressure sores in bedridden patients.' },
-  { id: 7,  img: '/equip-7.jpg',  name: 'Walker / Zimmer Frame',       category: 'Mobility Aids',        type: 'Rent / Sale', tag: '',           desc: 'Sturdy aluminium walking frame for post-surgery and elderly mobility support.' },
-  { id: 8,  img: '/equip-8.jpg',  name: 'Commode Chair',               category: 'Mobility Aids',        type: 'Rent / Sale', tag: '',           desc: 'Portable commode chair for patients with limited mobility. Easy to clean and maintain.' },
-  { id: 9,  img: '/equip-9.jpg',  name: 'Suction Machine',             category: 'Respiratory',          type: 'Rent / Sale', tag: '',           desc: 'Electric suction machine for airway secretion removal. Used for tracheostomy patients.' },
-  { id: 10, img: '/equip-10.jpg', name: 'Pulse Oximeter',              category: 'Monitoring',           type: 'Sale',        tag: '',           desc: 'Fingertip pulse oximeter to monitor blood oxygen saturation (SpO2) and pulse rate.' },
-  { id: 11, img: '/equip-11.jpg', name: 'BP Monitor',                  category: 'Monitoring',           type: 'Sale',        tag: '',           desc: 'Digital automatic blood pressure monitor for accurate home blood pressure readings.' },
-  { id: 12, img: '/equip-12.jpg', name: 'Nebulizer Machine',           category: 'Respiratory',          type: 'Rent / Sale', tag: '',           desc: 'Compressor nebulizer for administering inhaled medications for asthma and respiratory conditions.' },
-  { id: 13, img: '/equip-13.jpg', name: 'Crutches / Elbow Support',    category: 'Mobility Aids',        type: 'Rent / Sale', tag: '',           desc: 'Adjustable underarm and elbow crutches for post-injury and post-surgery mobility.' },
-  { id: 14, img: '/equip-14.jpg', name: 'Orthopaedic Pillow / Foam',   category: 'Beds & Mattresses',    type: 'Sale',        tag: '',           desc: 'Orthopaedic memory foam pillow and positioning wedges for pain relief and better posture.' },
-  { id: 15, img: '/equip-15.jpg', name: 'Medical Recliner Chair',      category: 'Mobility Aids',        type: 'Rent / Sale', tag: '',           desc: 'Recliner chair with adjustable backrest and leg rest. Ideal for post-surgery recovery.' },
-  { id: 16, img: '/equip-16.jpg', name: 'Stretcher / Transfer Board',  category: 'Clinical Aids',        type: 'Rent / Sale', tag: '',           desc: 'Slide transfer board for safe patient transfers between bed, wheelchair, and stretcher.' },
+  { id: 1,  img: '/equip-1.jpg',  name: 'Oxygen Concentrator (Oxy-med)',       category: 'Respiratory',       type: 'Rent / Sale', tag: 'Most Rented', desc: 'Oxy-med branded oxygen concentrator for home oxygen therapy. Ideal for patients requiring continuous oxygen support at home.' },
+  { id: 2,  img: '/equip-2.jpg',  name: 'Oxygen Concentrator 5L & 10L',        category: 'Respiratory',       type: 'Rent / Sale', tag: 'Popular',    desc: 'Dual Oxy-med oxygen concentrators — 5L and 10L models available. Suitable for home and bedside oxygen therapy.' },
+  { id: 3,  img: '/equip-3.jpg',  name: 'Home Nursing Care Service',            category: 'Care Services',     type: 'Service',     tag: '',           desc: 'Professional home nursing care with trained attendant. Nurse assists bedridden patients with daily care at home.' },
+  { id: 4,  img: '/equip-4.jpg',  name: 'Wheelchair (Ryder Pro)',               category: 'Mobility Aids',     type: 'Rent / Sale', tag: '',           desc: 'Lightweight foldable Ryder Pro wheelchair. Suitable for indoor and outdoor mobility for elderly and post-surgery patients.' },
+  { id: 5,  img: '/equip-5.jpg',  name: 'CPAP / BiPAP Machine',                category: 'Respiratory',       type: 'Rent / Sale', tag: '',           desc: 'CPAP/BiPAP respiratory therapy machine for sleep apnea and breathing support. Available with mask and hose.' },
+  { id: 6,  img: '/equip-6.jpg',  name: 'Hospital Bed (Manual 2-Function)',     category: 'Beds & Mattresses', type: 'Rent / Sale', tag: 'New',        desc: 'White frame manual 2-function hospital bed with blue mattress, side rails, and crank handle for backrest adjustment.' },
+  { id: 7,  img: '/equip-7.jpg',  name: 'Hospital Beds with IV Stand',          category: 'Beds & Mattresses', type: 'Rent / Sale', tag: '',           desc: 'ABS panel hospital beds with side rails and attached IV drip stands. Available as single or pair for home or clinic use.' },
+  { id: 8,  img: '/equip-8.jpg',  name: 'Patient Attendant with IV Drip Care', category: 'Care Services',     type: 'Service',     tag: '',           desc: 'Trained patient attendant providing bedside care including IV drip monitoring, urine bag management and daily assistance.' },
+  { id: 9,  img: '/equip-9.jpg',  name: 'Home Care Delivery Service',           category: 'Care Services',     type: 'Service',     tag: '',           desc: 'Humble Home Care Nursing Service branded delivery team bringing medical equipment and supplies directly to your doorstep.' },
+  { id: 10, img: '/equip-10.jpg', name: 'Wheelchair (Standard)',                category: 'Mobility Aids',     type: 'Rent / Sale', tag: '',           desc: 'Standard black steel frame manual wheelchair with large rear wheels and hand brakes. Suitable for daily mobility.' },
+  { id: 11, img: '/equip-11.jpg', name: 'Elderly Care at Home',                 category: 'Care Services',     type: 'Service',     tag: '',           desc: 'Compassionate elderly care service at home. Trained caregiver attends to bedridden senior patients with dignity and care.' },
+  { id: 12, img: '/equip-12.jpg', name: 'Oxygen Concentrator (Oxymed 10L)',     category: 'Respiratory',       type: 'Rent / Sale', tag: '',           desc: 'White Oxymed 10-litre oxygen concentrator. Higher capacity model suitable for patients requiring increased oxygen flow.' },
+  { id: 13, img: '/equip-13.jpg', name: 'Oxygen Concentrator with Nebulizer',   category: 'Respiratory',       type: 'Rent / Sale', tag: '',           desc: 'Advanced oxygen concentrator with built-in nebulizer function. Digital display with oxygen level and timer controls.' },
+  { id: 14, img: '/equip-14.jpg', name: 'Oxygen Concentrator Mini (Oxy-med)',   category: 'Respiratory',       type: 'Rent / Sale', tag: '',           desc: 'Compact Oxy-med mini oxygen concentrator. Lightweight and portable — ideal for patients with moderate oxygen needs.' },
+  { id: 15, img: '/equip-15.jpg', name: 'Electric Hospital Bed (3-Function)',   category: 'Beds & Mattresses', type: 'Rent / Sale', tag: '',           desc: 'Motorized 3-function electric hospital bed with remote control, blue mattress, side rails and wheels. Home delivery included.' },
+  { id: 16, img: '/equip-16.jpg', name: 'Hospital Bed Installation Service',    category: 'Care Services',     type: 'Service',     tag: '',           desc: 'Humble Home Care Nursing team provides professional hospital bed delivery, assembly and installation at your home.' },
 ];
 
-const categories = ['All', ...new Set(allEquipment.map((e) => e.category))];
-const types = ['All', 'Rent / Sale', 'Sale'];
+const categories = ['All', 'Respiratory', 'Beds & Mattresses', 'Mobility Aids', 'Care Services'];
+const types = ['All', 'Rent / Sale', 'Service'];
 
 function EquipModal({ item, onClose }) {
   useEffect(() => {

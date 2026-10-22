@@ -2,22 +2,22 @@ import { useState, useRef, useEffect } from 'react';
 import './MedicalEquipments.css';
 
 const equipment = [
-  { id: 1,  img: '/equip-1.jpg',  name: 'Hospital Bed',              type: 'Rent / Sale', tag: 'Most Rented' },
-  { id: 2,  img: '/equip-2.jpg',  name: 'Wheelchair',                type: 'Rent / Sale', tag: '' },
-  { id: 3,  img: '/equip-3.jpg',  name: 'Oxygen Concentrator',       type: 'Rent / Sale', tag: 'Popular' },
-  { id: 4,  img: '/equip-4.jpg',  name: 'Patient Attendant Table',   type: 'Rent / Sale', tag: '' },
-  { id: 5,  img: '/equip-5.jpg',  name: 'IV Stand / Drip Stand',     type: 'Rent / Sale', tag: '' },
-  { id: 6,  img: '/equip-6.jpg',  name: 'Air Mattress / Bed Sore',   type: 'Rent / Sale', tag: 'New' },
-  { id: 7,  img: '/equip-7.jpg',  name: 'Walker / Zimmer Frame',     type: 'Rent / Sale', tag: '' },
-  { id: 8,  img: '/equip-8.jpg',  name: 'Commode Chair',             type: 'Rent / Sale', tag: '' },
-  { id: 9,  img: '/equip-9.jpg',  name: 'Suction Machine',           type: 'Rent / Sale', tag: '' },
-  { id: 10, img: '/equip-10.jpg', name: 'Pulse Oximeter',            type: 'Sale',        tag: '' },
-  { id: 11, img: '/equip-11.jpg', name: 'BP Monitor',                type: 'Sale',        tag: '' },
-  { id: 12, img: '/equip-12.jpg', name: 'Nebulizer Machine',         type: 'Rent / Sale', tag: '' },
-  { id: 13, img: '/equip-13.jpg', name: 'Crutches / Elbow Support',  type: 'Rent / Sale', tag: '' },
-  { id: 14, img: '/equip-14.jpg', name: 'Orthopaedic Pillow / Foam', type: 'Sale',        tag: '' },
-  { id: 15, img: '/equip-15.jpg', name: 'Medical Recliner Chair',    type: 'Rent / Sale', tag: '' },
-  { id: 16, img: '/equip-16.jpg', name: 'Stretcher / Transfer Board',type: 'Rent / Sale', tag: '' },
+  { id: 1,  img: '/equip-1.jpg',  name: 'Oxygen Concentrator (Oxy-med)',        type: 'Rent / Sale', tag: 'Most Rented' },
+  { id: 2,  img: '/equip-2.jpg',  name: 'Oxygen Concentrator 5L & 10L',         type: 'Rent / Sale', tag: 'Popular' },
+  { id: 3,  img: '/equip-3.jpg',  name: 'Home Nursing Care Service',             type: 'Service',     tag: '' },
+  { id: 4,  img: '/equip-4.jpg',  name: 'Wheelchair (Ryder Pro)',                type: 'Rent / Sale', tag: '' },
+  { id: 5,  img: '/equip-5.jpg',  name: 'CPAP / BiPAP Machine',                 type: 'Rent / Sale', tag: '' },
+  { id: 6,  img: '/equip-6.jpg',  name: 'Hospital Bed (Manual 2-Function)',      type: 'Rent / Sale', tag: 'New' },
+  { id: 7,  img: '/equip-7.jpg',  name: 'Hospital Beds with IV Stand',           type: 'Rent / Sale', tag: '' },
+  { id: 8,  img: '/equip-8.jpg',  name: 'Patient Attendant with IV Drip Care',  type: 'Service',     tag: '' },
+  { id: 9,  img: '/equip-9.jpg',  name: 'Home Care Delivery Service',            type: 'Service',     tag: '' },
+  { id: 10, img: '/equip-10.jpg', name: 'Wheelchair (Standard)',                 type: 'Rent / Sale', tag: '' },
+  { id: 11, img: '/equip-11.jpg', name: 'Elderly Care at Home',                  type: 'Service',     tag: '' },
+  { id: 12, img: '/equip-12.jpg', name: 'Oxygen Concentrator (Oxymed 10L)',      type: 'Rent / Sale', tag: '' },
+  { id: 13, img: '/equip-13.jpg', name: 'Oxygen Concentrator with Nebulizer',    type: 'Rent / Sale', tag: '' },
+  { id: 14, img: '/equip-14.jpg', name: 'Oxygen Concentrator Mini (Oxy-med)',    type: 'Rent / Sale', tag: '' },
+  { id: 15, img: '/equip-15.jpg', name: 'Electric Hospital Bed (3-Function)',    type: 'Rent / Sale', tag: '' },
+  { id: 16, img: '/equip-16.jpg', name: 'Hospital Bed Installation Service',     type: 'Service',     tag: '' },
 ];
 
 function EquipCard({ item, onPreview }) {

@@ -121,3 +121,53 @@
 @media (max-width: 600px) {
   .ls-grid { grid-template-columns: 1fr; }
 }
+
+/* ── Rating in header ───────────────── */
+.ls-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: .5rem;
+}
+
+.ls-rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 50px;
+  padding: .35rem .85rem;
+  white-space: nowrap;
+}
+
+.ls-stars {
+  color: #FBBC05;
+  font-size: .95rem;
+  letter-spacing: 1px;
+}
+
+.ls-rating-text {
+  font-size: .8rem;
+  font-weight: 600;
+  color: rgba(255,255,255,.82);
+}
+
+/* ── Rating mini on each card ───────── */
+.ls-rating-mini {
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+}
+
+.ls-stars-mini {
+  color: #FBBC05;
+  font-size: .78rem;
+  letter-spacing: .5px;
+}
+
+.ls-rating-mini-text {
+  font-size: .75rem;
+  font-weight: 600;
+  color: rgba(255,255,255,.6);
+}

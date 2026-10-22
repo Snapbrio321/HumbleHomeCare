@@ -220,3 +220,45 @@
   .loc-call-btn, .loc-map-btn { width: 100%; justify-content: center; text-align: center; }
   .loc-hero-stats { gap: .75rem; }
 }
+
+/* ── Google Rating Badge ─────────────── */
+.loc-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--gray-50);
+  border: 1.5px solid var(--gray-200);
+  border-radius: 50px;
+  padding: 0.4rem 0.9rem;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
+.loc-rating-stars {
+  color: #FBBC05;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.loc-rating-score {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--blue-dark);
+}
+
+.loc-rating-count {
+  font-size: 0.8rem;
+  color: var(--gray-600);
+  font-weight: 500;
+}
+
+.loc-rating-google {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid var(--gray-200);
+  padding-left: 0.5rem;
+  margin-left: 0.1rem;
+  transition: opacity .2s;
+}
+.loc-rating-google:hover { opacity: .75; }

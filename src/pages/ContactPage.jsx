@@ -73,11 +73,11 @@ export default function ContactPage() {
                   </div>
                 </a>
 
-                <a href="mailto:info@humblehealthcare.com" className="cp-detail cp-detail--link">
+                <a href="mailto:jillepalliab@gmail.com" className="cp-detail cp-detail--link">
                   <div className="cp-detail-icon cp-icon--orange">✉️</div>
                   <div>
                     <div className="cp-detail-label">Email Us</div>
-                    <div className="cp-detail-value">info@humblehealthcare.com</div>
+                    <div className="cp-detail-value">jillepalliab@gmail.com</div>
                   </div>
                 </a>
 

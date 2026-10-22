@@ -79,8 +79,8 @@ export default function Contact() {
                 <span className="contact-detail-icon" aria-hidden="true">✉️</span>
                 <div>
                   <div className="contact-detail-label">Email Us</div>
-                  <a href="mailto:info@humblehealthcare.com" className="contact-detail-value">
-                    info@humblehealthcare.com
+                  <a href="mailto:jillepalliab@gmail.com" className="contact-detail-value">
+                    jillepalliab@gmail.com
                   </a>
                 </div>
               </div>

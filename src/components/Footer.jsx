@@ -87,7 +87,7 @@ export default function Footer() {
               </li>
               <li>
                 <span aria-hidden="true">✉️</span>
-                <a href="mailto:info@humblehealthcare.com">info@humblehealthcare.com</a>
+                <a href="mailto:jillepalliab@gmail.com">jillepalliab@gmail.com</a>
               </li>
               <li>
                 <span aria-hidden="true">🕐</span>

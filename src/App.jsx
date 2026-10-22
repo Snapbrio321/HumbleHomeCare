@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar            from './components/Navbar';
 import Footer            from './components/Footer';
+import LocationsStrip    from './components/LocationsStrip';
 import HomePage          from './pages/HomePage';
 import AboutPage         from './pages/AboutPage';
 import ServicesPage      from './pages/ServicesPage';
@@ -8,6 +9,7 @@ import ServiceDetailPage from './pages/ServiceDetailPage';
 import WhyUsPage         from './pages/WhyUsPage';
 import ContactPage       from './pages/ContactPage';
 import EquipmentPage     from './pages/EquipmentPage';
+import LocationsPage     from './pages/LocationsPage';
 import './App.css';
 
 export default function App() {
@@ -22,7 +24,9 @@ export default function App() {
         <Route path="/why-us"              element={<WhyUsPage />} />
         <Route path="/contact"             element={<ContactPage />} />
         <Route path="/equipment"           element={<EquipmentPage />} />
+        <Route path="/locations"           element={<LocationsPage />} />
       </Routes>
+      <LocationsStrip />
       <Footer />
       <BackToTop />
     </>

@@ -3,12 +3,13 @@ import { servicesData } from '../data/servicesData';
 import './Footer.css';
 
 const quickLinks = [
-  { label: 'Home',             to: '/' },
-  { label: 'Our Services',     to: '/services' },
+  { label: 'Home',              to: '/' },
+  { label: 'Our Services',      to: '/services' },
   { label: 'Medical Equipment', to: '/equipment' },
-  { label: 'Why Choose Us',    to: '/why-us' },
-  { label: 'About Us',         to: '/about' },
-  { label: 'Contact Us',       to: '/contact' },
+  { label: 'Why Choose Us',     to: '/why-us' },
+  { label: 'About Us',          to: '/about' },
+  { label: 'Our Locations',     to: '/locations' },
+  { label: 'Contact Us',        to: '/contact' },
 ];
 
 export default function Footer() {

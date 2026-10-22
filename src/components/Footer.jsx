@@ -108,6 +108,9 @@ export default function Footer() {
           <p className="footer-copy">© {year} Humble Health Care Services. All rights reserved.</p>
           <p className="footer-motto"><em>We care for your loved ones like family.</em></p>
         </div>
+        <div className="footer-dev">
+          Developed by <span>Anand</span>
+        </div>
       </div>
     </footer>
   );

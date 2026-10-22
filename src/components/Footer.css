@@ -169,3 +169,16 @@
   .footer-brand { grid-column: auto; }
   .footer-bottom-inner { flex-direction: column; text-align: center; }
 }
+
+.footer-dev {
+  text-align: center;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.35);
+  padding: 0.5rem 0 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+.footer-dev span {
+  color: var(--orange-main);
+  font-weight: 600;
+}

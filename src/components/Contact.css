@@ -71,6 +71,7 @@
   font-size: 0.95rem;
   font-weight: 500;
   color: var(--white);
+  display: block;
   transition: opacity var(--transition);
 }
 

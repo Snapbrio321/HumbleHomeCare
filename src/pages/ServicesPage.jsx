@@ -78,7 +78,7 @@ export default function ServicesPage() {
           </div>
           <div className="sp-cta-actions">
             <Link to="/contact" className="btn-primary">Contact Us Today</Link>
-            <a href="tel:+919666566846" className="btn-outline sp-outline">📞 +91 96665 66846</a>
+            <a href="tel:+919666566846" className="btn-outline sp-outline">📞 9666 566 846</a>
           </div>
         </div>
       </section>

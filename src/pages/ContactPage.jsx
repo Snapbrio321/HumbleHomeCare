@@ -58,8 +58,8 @@ export default function ContactPage() {
                   <div className="cp-detail-icon cp-icon--blue">📞</div>
                   <div>
                     <div className="cp-detail-label">Call Us</div>
-                    <div className="cp-detail-value">+91 96665 66846</div>
-                    <div className="cp-detail-value" style={{ marginTop: '0.2rem' }}>+91 96665 66881</div>
+                    <div className="cp-detail-value">9666 566 846</div>
+                    <div className="cp-detail-value" style={{ marginTop: '0.2rem' }}>9666 566 881</div>
                   </div>
                 </a>
 

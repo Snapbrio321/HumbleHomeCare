@@ -73,8 +73,8 @@ export default function Footer() {
               <li>
                 <span aria-hidden="true">📞</span>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
-                  <a href="tel:+919666566846">+91 96665 66846</a>
-                  <a href="tel:+919666566881">+91 96665 66881</a>
+                  <a href="tel:+919666566846">9666 566 846</a>
+                  <a href="tel:+919666566881">9666 566 881</a>
                 </div>
               </li>
               <li>

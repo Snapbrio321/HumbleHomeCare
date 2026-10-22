@@ -1,0 +1,49 @@
+/* App-level styles: back-to-top button + skip link */
+
+/* Skip link for keyboard accessibility */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--blue-main);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  font-weight: 600;
+  z-index: 9999;
+  transition: top 0.2s;
+}
+
+.skip-link:focus { top: 0; }
+
+/* Back to Top */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--blue-main);
+  color: var(--white);
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(26,58,122,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 900;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.back-to-top:hover {
+  background: var(--orange-main);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(232,119,34,0.4);
+}
+
+@media (max-width: 480px) {
+  .back-to-top { bottom: 1.25rem; right: 1.25rem; width: 42px; height: 42px; }
+}

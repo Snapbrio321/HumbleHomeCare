@@ -1,0 +1,205 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 2px solid transparent;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 4px 24px rgba(26, 58, 122, 0.12);
+  border-bottom-color: var(--blue-light);
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.55rem 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ── Brand ──────────────────────────── */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.navbar-logo {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.navbar-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  min-width: 0;
+}
+
+.brand-main {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--blue-dark);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.brand-sub {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--orange-main);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ── Desktop links ───────────────────── */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  flex-shrink: 0;
+}
+
+.nav-link {
+  padding: 0.45rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--gray-700);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), background var(--transition);
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 0; height: 2px;
+  background: var(--orange-main);
+  border-radius: 2px;
+  transition: width var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active { color: var(--blue-main); }
+
+.nav-link:hover::after,
+.nav-link.active::after { width: 70%; }
+
+.nav-cta {
+  margin-left: 0.5rem;
+  font-size: 0.85rem;
+  padding: 0.6rem 1.2rem;
+  white-space: nowrap;
+}
+
+/* ── Hamburger ───────────────────────── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2.5px;
+  background: var(--blue-dark);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+.hamburger.open span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+/* ── Mobile Menu ─────────────────────── */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.2rem;
+  padding: 0 1rem;
+  background: var(--white);
+  border-top: 1px solid var(--gray-200);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.3s ease;
+}
+
+.mobile-menu.open {
+  max-height: 480px;
+  padding: 0.75rem 1rem 1.25rem;
+}
+
+.mobile-link {
+  display: block;
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.97rem;
+  font-weight: 500;
+  color: var(--gray-700);
+  border-radius: var(--radius-sm);
+  transition: background var(--transition), color var(--transition);
+}
+
+.mobile-link:hover,
+.mobile-link.active {
+  background: var(--blue-light);
+  color: var(--blue-main);
+}
+
+.mobile-cta {
+  margin-top: 0.6rem;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ── Breakpoints ─────────────────────── */
+
+/* Hide text on very small screens */
+@media (max-width: 360px) {
+  .navbar-brand-text { display: none; }
+  .navbar-logo { width: 40px; height: 40px; }
+}
+
+/* Switch to hamburger */
+@media (max-width: 768px) {
+  .navbar-links { display: none; }
+  .hamburger    { display: flex; }
+  .mobile-menu  { display: flex; }
+}
+
+@media (max-width: 375px) {
+  .navbar-inner { padding: 0.5rem 1rem; }
+}

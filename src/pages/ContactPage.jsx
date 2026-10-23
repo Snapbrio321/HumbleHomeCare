@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './ContactPage.css';
+import SEO from '../components/SEO';
 
 export default function ContactPage() {
   const [form, setForm]   = useState({ name: '', phone: '', email: '', service: '', message: '' });
@@ -23,6 +24,12 @@ export default function ContactPage() {
 
   return (
     <main className="contact-page">
+      <SEO
+        title="Contact Us – Home Nursing Care in Visakhapatnam | 9666 566 846"
+        description="Contact Humble Health Care Services for home nursing, elderly care, patient attendant and medical equipment. Call 9666 566 846 or 9666 566 881. Serving Visakhapatnam, Vijayawada, Rajamahendravaram and across Andhra Pradesh."
+        keywords="contact home nursing care Visakhapatnam, home healthcare contact Vizag, call home nurse Andhra Pradesh, home care services phone number, nursing care near me contact"
+        canonical="/contact"
+      />
 
       {/* Hero */}
       <section className="cp-hero">

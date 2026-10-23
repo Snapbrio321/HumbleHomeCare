@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar            from './components/Navbar';
 import Footer            from './components/Footer';
 import LocationsStrip    from './components/LocationsStrip';
+import { LocalBusinessSchema, BranchLocationsSchema, FAQSchema } from './components/JsonLD';
 import HomePage          from './pages/HomePage';
 import AboutPage         from './pages/AboutPage';
 import ServicesPage      from './pages/ServicesPage';
@@ -15,6 +16,11 @@ import './App.css';
 export default function App() {
   return (
     <>
+      {/* Global JSON-LD Structured Data */}
+      <LocalBusinessSchema />
+      <BranchLocationsSchema />
+      <FAQSchema />
+
       <Navbar />
       <Routes>
         <Route path="/"                    element={<HomePage />} />

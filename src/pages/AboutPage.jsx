@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './AboutPage.css';
+import SEO from '../components/SEO';
 
 /* ── Scroll-reveal hook ─────────────────────────── */
 function useFadeIn(threshold = 0.15) {

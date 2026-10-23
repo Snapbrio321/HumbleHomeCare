@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { servicesData } from '../data/servicesData';
 import './ServiceDetailPage.css';
+import SEO from '../components/SEO';
 
 export default function ServiceDetailPage() {
   const { serviceId } = useParams();
@@ -23,11 +24,34 @@ export default function ServiceDetailPage() {
     );
   }
 
+  const seoTitles = {
+    'home-nursing':       'Home Nursing Care in Visakhapatnam – Professional Nurses at Home',
+    'elderly-care':       'Elderly Care Services Visakhapatnam – Senior Care at Home',
+    'patient-attendant':  'Patient Attendant Services – 24/7 Bedside Care Visakhapatnam',
+    'hospital-attendant': 'Hospital Care Attendants – Visakhapatnam & Andhra Pradesh',
+    'post-surgery':       'Post-Surgery Care at Home – Recovery Support Visakhapatnam',
+    'personal-care':      'Personal Care & Daily Assistance – Home Care Services Vizag',
+  };
+  const seoDescs = {
+    'home-nursing':       'Professional home nursing care in Visakhapatnam. Trained nurses visit your home for patient monitoring, post-hospitalization care, wound dressing and bedridden patient support. Call 9666 566 846.',
+    'elderly-care':       'Compassionate elderly care services at home in Visakhapatnam. Daily living assistance, mobility support, personal hygiene, companionship for senior citizens. Available 24/7.',
+    'patient-attendant':  'Trained patient attendants available day and night in Visakhapatnam. Bedside care, feeding assistance, personal hygiene and recovery support at home or hospital. Call 9666 566 846.',
+    'hospital-attendant': 'Reliable hospital care attendants in Visakhapatnam. Support patients during hospital stay – daily routine assistance, coordination with staff, companionship.',
+    'post-surgery':       'Post-surgery care at home in Visakhapatnam. Wound care, medication reminders, physiotherapy support and health monitoring for patients recovering after surgery.',
+    'personal-care':      'Personal care and daily assistance at home in Visakhapatnam. Help with bathing, dressing, grooming, mobility and meal preparation for elderly and patients.',
+  };
+
   // Other services (excluding current)
   const others = servicesData.filter((s) => s.id !== service.id).slice(0, 3);
 
   return (
     <main className="svc-detail-page">
+      <SEO
+        title={seoTitles[service.id] || service.title}
+        description={seoDescs[service.id] || service.heroDesc}
+        keywords={`${service.title} Visakhapatnam, ${service.title} Vizag, ${service.title} Andhra Pradesh, home care services near me, Humble Health Care Services`}
+        canonical={service.slug}
+      />
 
       {/* ── Hero ─────────────────────────────────── */}
       <section className={`svc-hero svc-hero--${service.color}`} aria-label={service.title}>

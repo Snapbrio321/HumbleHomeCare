@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { servicesData } from '../data/servicesData';
 import './ServicesPage.css';
+import SEO from '../components/SEO';
 
 export default function ServicesPage() {
   useEffect(() => {
@@ -12,6 +13,12 @@ export default function ServicesPage() {
 
   return (
     <main className="services-page">
+      <SEO
+        title="Home Care Services – Nursing, Elderly, Post-Surgery Care | Visakhapatnam"
+        description="Explore all home care services by Humble Health Care Services – home nursing care, elderly care, patient attendant, hospital attendant, post-surgery care and personal care. Available 24/7 in Visakhapatnam, Vijayawada and Andhra Pradesh."
+        keywords="home nursing care Visakhapatnam, elderly care services Vizag, patient attendant Andhra Pradesh, post surgery care at home, hospital care attendant, personal care services Vizag, home care services near me, nursing at home Vijayawada"
+        canonical="/services"
+      />
 
       {/* Hero */}
       <section className="sp-hero">

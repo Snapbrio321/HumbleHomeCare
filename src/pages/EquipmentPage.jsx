@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './EquipmentPage.css';
+import SEO from '../components/SEO';
 
 const allEquipment = [
   { id: 1,  img: '/equip-1.jpg',  name: 'Oxygen Concentrator (Oxy-med)',       category: 'Respiratory',       type: 'Rent / Sale', tag: 'Most Rented', desc: 'Oxy-med branded oxygen concentrator for home oxygen therapy. Ideal for patients requiring continuous oxygen support at home.' },
@@ -81,6 +82,12 @@ export default function EquipmentPage() {
 
   return (
     <main className="ep-page">
+      <SEO
+        title="Medical Equipment on Rent & Sale – Oxygen Concentrator, Hospital Bed, Wheelchair | Visakhapatnam"
+        description="Rent or buy medical equipment in Visakhapatnam – oxygen concentrators, hospital beds, wheelchairs, CPAP/BiPAP machines, electric beds and more. Home delivery available. Call 9666 566 846."
+        keywords="oxygen concentrator rent Visakhapatnam, hospital bed rent Vizag, wheelchair on rent Andhra Pradesh, medical equipment rent Visakhapatnam, oxygen concentrator for home Vizag, CPAP machine rent, electric hospital bed rent, medical equipment on hire Vijayawada, medical equipment sale Visakhapatnam"
+        canonical="/equipment"
+      />
 
       {/* Hero */}
       <section className="ep-hero">

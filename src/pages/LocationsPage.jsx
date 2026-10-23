@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './LocationsPage.css';
+import SEO from '../components/SEO';
 
 const offices = [
   {
@@ -210,6 +211,12 @@ export default function LocationsPage() {
 
   return (
     <main className="loc-page">
+      <SEO
+        title="Our Locations – Home Healthcare Offices in Visakhapatnam, Vijayawada, Rajamahendravaram"
+        description="Visit Humble Health Care Services offices in Visakhapatnam (HQ), Vijayawada, Rajamahendravaram, Vizianagaram, Khammam and Kakinada. Serving patients across Andhra Pradesh and Telangana."
+        keywords="home nursing care office Visakhapatnam, home healthcare Vijayawada, home care services Rajamahendravaram, healthcare office Vizianagaram, home nursing Khammam, home care Kakinada, home healthcare locations Andhra Pradesh"
+        canonical="/locations"
+      />
 
       {/* Hero */}
       <section className="loc-hero">

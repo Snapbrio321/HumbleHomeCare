@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './WhyUsPage.css';
+import SEO from '../components/SEO';
 
 const reasons = [
   { icon: '‚ù§Ô∏è',  num: '01', title: 'Compassionate Care',        desc: 'Every patient is treated with kindness, empathy, and genuine concern for their well-being. Compassion is the foundation of everything we do.' },
@@ -30,6 +31,12 @@ export default function WhyUsPage() {
 
   return (
     <main className="why-page">
+      <SEO
+        title="Why Choose Us ñ Best Home Healthcare in Visakhapatnam"
+        description="Why families trust Humble Health Care Services ñ 9+ years of experience, 500+ patients served, compassionate care, personalized plans, 24/7 availability. The best home healthcare provider in Visakhapatnam and Andhra Pradesh."
+        keywords="best home nursing care Visakhapatnam, trusted home healthcare Vizag, why choose home care services, home nursing agency Andhra Pradesh, experienced home care Vizag, 24 7 home nursing care"
+        canonical="/why-us"
+      />
 
       {/* Hero */}
       <section className="wp-hero">

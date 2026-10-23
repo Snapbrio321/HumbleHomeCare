@@ -1,10 +1,11 @@
 User-agent: *
 Allow: /
 
-# Sitemap
+# Primary Sitemap
 Sitemap: https://humblehealthcareservice.com/sitemap.xml
+
+# Keywords Sitemap
+Sitemap: https://humblehealthcareservice.com/keywords-sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
-
-# Block nothing — full site indexable

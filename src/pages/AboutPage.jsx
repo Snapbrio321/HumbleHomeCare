@@ -178,7 +178,7 @@ function ChairmanSection() {
           <div className="chairman-card">
             <div className="chairman-photo-wrap">
               <img
-                src="/chairman.png"
+                src="/chairman.jpg?v=2"
                 alt="Mr. Anand Babu – Chairman, Humble Health Care Services"
                 className="chairman-photo"
               />

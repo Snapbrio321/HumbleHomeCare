@@ -58,7 +58,7 @@ export default function Hero() {
               <span className="hero-reviews-num">(223)</span>
             </div>
             <a
-              href="https://www.google.com/search?q=Humble+Health+Care+Services+Vizag+reviews"
+              href="https://www.google.com/search?q=Humble+Home+Care+Services+Visakhapatnam"
               target="_blank"
               rel="noopener noreferrer"
               className="hero-reviews-google"

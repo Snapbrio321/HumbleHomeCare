@@ -46,7 +46,8 @@ export function LocalBusinessSchema() {
       "worstRating": "1"
     },
     "sameAs": [
-      "https://www.facebook.com/humblehealthcare",
+      "https://www.google.com/search?q=Humble+Home+Care+Services+Visakhapatnam",
+      "https://g.co/kgs/HumbleHomeCareServices",
       "https://github.com/Snapbrio321/HumbleHomeCare"
     ],
     "areaServed": [

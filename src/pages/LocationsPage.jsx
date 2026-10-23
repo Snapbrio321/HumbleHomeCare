@@ -108,7 +108,7 @@ function OfficeCard({ office, index }) {
           <span className="loc-rating-score">5.0</span>
           <span className="loc-rating-count">(223 Google Reviews)</span>
           <a
-            href="https://www.google.com/search?q=Humble+Health+Care+Services+reviews"
+            href="https://www.google.com/search?q=Humble+Home+Care+Services+Visakhapatnam"
             target="_blank"
             rel="noopener noreferrer"
             className="loc-rating-google"

@@ -1,72 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- Home -->
+  <!-- ═══════════════════════════════════════════
+       HOME PAGE
+       Keywords: home nursing care Visakhapatnam,
+       home healthcare Vizag, elderly care near me,
+       patient attendant services Andhra Pradesh,
+       home care services near me
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://humblehealthcareservice.com/</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://humblehealthcareservice.com/logo.png</image:loc>
+      <image:title>Humble Home Care Services – Visakhapatnam</image:title>
+      <image:caption>Professional Home Nursing Care, Elderly Care and Medical Equipment in Visakhapatnam, Andhra Pradesh</image:caption>
+    </image:image>
   </url>
 
-  <!-- Services -->
+  <!-- ═══════════════════════════════════════════
+       SERVICES PAGE
+       Keywords: home care services Visakhapatnam,
+       nursing services at home Vizag,
+       home health aide services Andhra Pradesh,
+       in home care services near me
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://humblehealthcareservice.com/services</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
   </url>
 
-  <!-- Service Detail Pages -->
+  <!-- ═══════════════════════════════════════════
+       HOME NURSING CARE
+       Keywords: home nursing care Visakhapatnam,
+       nursing at home Vizag, nurse at home service,
+       home nurse near me Visakhapatnam,
+       visiting nurse services Andhra Pradesh,
+       post hospitalization care at home,
+       registered nurse home visit Vizag
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://humblehealthcareservice.com/services/home-nursing</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
   </url>
+
+  <!-- ═══════════════════════════════════════════
+       ELDERLY CARE SERVICES
+       Keywords: elderly care services Visakhapatnam,
+       senior care at home Vizag,
+       old age care services Andhra Pradesh,
+       caretaker for elderly at home,
+       geriatric care at home Visakhapatnam,
+       old age home care services near me,
+       senior citizen care services Vizag
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://humblehealthcareservice.com/services/elderly-care</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
   </url>
+
+  <!-- ═══════════════════════════════════════════
+       PATIENT ATTENDANT SERVICES
+       Keywords: patient attendant services Visakhapatnam,
+       patient care attendant at home Vizag,
+       bedside attendant services Andhra Pradesh,
+       24 hour patient care at home,
+       day night attendant services near me,
+       home patient caretaker Visakhapatnam
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://humblehealthcareservice.com/services/patient-attendant</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
   </url>
+
+  <!-- ═══════════════════════════════════════════
+       HOSPITAL CARE ATTENDANTS
+       Keywords: hospital attendant services Vizag,
+       hospital patient attendant Visakhapatnam,
+       hospital care attendant Andhra Pradesh,
+       attendant for hospital patient near me,
+       hospital bedside attendant services
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://humblehealthcareservice.com/services/hospital-attendant</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.88</priority>
   </url>
+
+  <!-- ═══════════════════════════════════════════
+       POST SURGERY CARE
+       Keywords: post surgery care at home Visakhapatnam,
+       post operative care at home Vizag,
+       after surgery care services Andhra Pradesh,
+       post hospitalization care near me,
+       recovery care at home Visakhapatnam,
+       surgical recovery home care Vizag
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://humblehealthcareservice.com/services/post-surgery</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
   </url>
+
+  <!-- ═══════════════════════════════════════════
+       PERSONAL CARE & DAILY ASSISTANCE
+       Keywords: personal care services at home Vizag,
+       daily care assistance Visakhapatnam,
+       bathing dressing assistance at home,
+       mobility assistance at home Andhra Pradesh,
+       personal hygiene care at home near me
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://humblehealthcareservice.com/services/personal-care</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.88</priority>
   </url>
 
-  <!-- Equipment -->
+  <!-- ═══════════════════════════════════════════
+       MEDICAL EQUIPMENT
+       Keywords: medical equipment on rent Visakhapatnam,
+       oxygen concentrator rent Vizag,
+       hospital bed on rent Visakhapatnam,
+       wheelchair on rent Vizag,
+       oxygen concentrator for home Andhra Pradesh,
+       hospital bed rent near me,
+       CPAP machine rent Visakhapatnam,
+       electric hospital bed rent Vizag,
+       medical equipment on hire Andhra Pradesh,
+       BiPAP machine rent Visakhapatnam,
+       oxygen concentrator 10 litre rent Vizag,
+       medical equipment sale Visakhapatnam
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://humblehealthcareservice.com/equipment</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
   </url>
 
-  <!-- Why Us -->
+  <!-- ═══════════════════════════════════════════
+       WHY CHOOSE US
+       Keywords: best home nursing care Visakhapatnam,
+       trusted home healthcare Vizag,
+       experienced home care services AP,
+       affordable home nursing Andhra Pradesh,
+       reliable home care services near me
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://humblehealthcareservice.com/why-us</loc>
     <lastmod>2026-10-23</lastmod>
@@ -74,28 +170,52 @@
     <priority>0.75</priority>
   </url>
 
-  <!-- About -->
+  <!-- ═══════════════════════════════════════════
+       ABOUT PAGE
+       Keywords: humble home care services Visakhapatnam,
+       home healthcare company Vizag,
+       home nursing agency Andhra Pradesh,
+       Mr Anand Babu home care services,
+       about humble health care services
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://humblehealthcareservice.com/about</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
 
-  <!-- Locations -->
+  <!-- ═══════════════════════════════════════════
+       LOCATIONS PAGE
+       Keywords: home nursing care Visakhapatnam,
+       home care services Vijayawada,
+       home nursing Rajamahendravaram,
+       home care Vizianagaram,
+       home nursing Kakinada,
+       home healthcare Khammam,
+       home care services Andhra Pradesh Telangana
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://humblehealthcareservice.com/locations</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.88</priority>
   </url>
 
-  <!-- Contact -->
+  <!-- ═══════════════════════════════════════════
+       CONTACT PAGE
+       Keywords: contact home nursing Visakhapatnam,
+       book home nurse Vizag,
+       home healthcare contact number Andhra Pradesh,
+       hire patient attendant Visakhapatnam,
+       home care services phone number Vizag,
+       call home nurse near me
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://humblehealthcareservice.com/contact</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
 
 </urlset>
